@@ -14,7 +14,11 @@ class HomebaseController extends AppframeController {
 		parent::_initialize();
 		defined('TMPL_PATH') or define("TMPL_PATH", C("SP_TMPL_PATH"));
 		$site_options=get_site_options();
-		$this->assign($site_options);
+		// dump($site_options);
+		$this->assign('site_options',$site_options);
+		$this->assign('seo_title',$site_options['site_seo_title']);
+		$this->assign('seo_keywords',$site_options['site_seo_keywords']);
+		$this->assign('seo_description',$site_options['site_seo_description']);
 		$ucenter_syn=C("UCENTER_ENABLED");
 		if($ucenter_syn){
 		    $session_user=session('user');

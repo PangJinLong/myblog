@@ -3,6 +3,14 @@
 <br>
 <!-- Footer ================================================== -->
 <hr>
+<php>$ad=sp_getad("portal_list_bottom");</php>
+<if condition="!empty($ad)">
+	<div>
+		<div>
+			{$ad}
+		</div>
+	</div>
+</if>
 {:hook('footer')}
 <div id="footer">
 	<div class="links">

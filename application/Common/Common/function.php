@@ -1128,6 +1128,21 @@ function sp_getad($ad_name){
 }
 
 /**
+ * 根据广告名称获取广告内容
+ * @param string $ad_name
+ * @return 广告内容
+ */
+function sp_getads($ad_name){
+	$ad_obj= M("Ad");
+	$ad = $ad_obj->field("ad_content")->where(array('ad_name'=>$ad_name,'status'=>1))->select();
+	foreach($ad as &$row){
+		$row['ad_content'] = htmlspecialchars_decode($row['ad_content']);
+	}
+	unset($row);
+	return $ad;
+}
+
+/**
  * 根据幻灯片标识获取所有幻灯片
  * @param string $slide 幻灯片标识
  * @return array;

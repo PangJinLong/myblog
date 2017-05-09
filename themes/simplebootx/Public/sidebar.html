@@ -84,16 +84,19 @@
 			        </foreach>
 		        </div>
 			</div>
-			
-			<php>$ad=sp_getad("portal_list_right_aside");</php>
-			<if condition="!empty($ad)">
-        	<div class="tc-box">
-	        	<div class="headtitle">
-	        		<h2>赞助商</h2>
-	        	</div>
+			<!-- <div class="tc-box">
 	        	<div>
-		        	{$ad}
+		        	{:sp_getad('233464')}
 		        </div>
-			</div>
+			</div> -->
+			<php>$ad=sp_getads("portal_list_right_aside");</php>
+			<if condition="!empty($ad)">
+				<foreach name="ad" item="vo">
+		        	<div class="tc-box">
+			        	<div>
+				        	{$vo['ad_content']}
+				        </div>
+					</div>
+				</foreach>
 			</if>
 		</div>

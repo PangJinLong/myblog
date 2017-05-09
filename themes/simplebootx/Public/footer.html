@@ -1,16 +1,14 @@
-<br>
-<br>
+<php>$portal_list_bottom=sp_getads("portal_list_bottom");</php>
+<if condition="!empty($portal_list_bottom)">
+	<foreach name="portal_list_bottom" item="vo">
+		<div>
+			{$vo['ad_content']}
+		</div>
+	</foreach>
+</if>
 <br>
 <!-- Footer ================================================== -->
 <hr>
-<php>$ad=sp_getad("portal_list_bottom");</php>
-<if condition="!empty($ad)">
-	<div>
-		<div>
-			{$ad}
-		</div>
-	</div>
-</if>
 {:hook('footer')}
 <div id="footer">
 	<div class="links">

@@ -45,7 +45,10 @@
 			<tc_include file="Public:sidebar" />
 		</div>
 
-
+		<php>$ad=sp_getad('list_bottom');</php>
+		<if condition="!empty($ad)">
+			{$ad}
+		</if>
 		<tc_include file="Public:footer" />
 	</div>
 

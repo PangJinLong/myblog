@@ -89,7 +89,10 @@
 		</div>
 		
 	</div>
-              
+ <php>$page_alert=sp_getad('page_alert');</php>
+	<if condition="!empty($page_alert)">
+		{$page_alert}
+	</if>              
 <tc_include file="Public:footer"/>
 </div>
 

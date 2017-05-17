@@ -48,7 +48,10 @@
 	<if condition="!empty($ad)">
 		{$ad}
 	</if>
-    
+     <php>$index_alert=sp_getad('index_alert');</php>
+	<if condition="!empty($index_alert)">
+		{$index_alert}
+	</if>
     <tc_include file="Public:footer" />
 </div>
 

@@ -54,7 +54,7 @@ define("UC_CLIENT_ROOT", './api/uc_client/');
 if(file_exists(UC_CLIENT_ROOT."config.inc.php")){
 	include UC_CLIENT_ROOT."config.inc.php";
 }
-
+//hello world
 //载入框架核心文件
 require SPAPP_PATH.'Core/ThinkPHP.php';
 

@@ -21,14 +21,14 @@
 		  	echo sp_get_menu("main",$effected_id,$filetpl,$foldertpl,$ul_class,$li_class,$style,$showlevel,$dropdown);
 		?>
 		
-		<ul class="nav pull-right" id="main-menu-user">
+		<!-- <ul class="nav pull-right" id="main-menu-user"> -->
 			<!-- <li class="user login" style="margin-left: 5px;">
 	            <a class="dropdown-toggle user notifactions" href="{:U('user/notification/index')}">
 	            <i class="fa fa-envelope"></i>
 	            <span class="count">0</span>
 	            </a>
           	</li> -->
-			<li class="dropdown user login">
+			<!-- <li class="dropdown user login">
 	            <a class="dropdown-toggle user" data-toggle="dropdown" href="#">
 	            <img src="__TMPL__Public/assets/images/headicon.png" class="headicon"/>
 	            <span class="user-nicename"></span><b class="caret"></b></a>
@@ -37,8 +37,8 @@
 	               <li class="divider"></li>
 	               <li><a href="{:U('user/index/logout')}"><i class="fa fa-sign-out"></i> &nbsp;退出</a></li>
 	            </ul>
-          	</li>
-          	<li class="dropdown user offline">
+          	</li> -->
+          <!-- 	<li class="dropdown user offline">
 	            <a class="dropdown-toggle user" data-toggle="dropdown" href="#">
 	           		<img src="__TMPL__Public/assets/images/headicon.png" class="headicon"/>登录<b class="caret"></b>
 	            </a>
@@ -49,8 +49,8 @@
 	               <li class="divider"></li>
 	               <li><a href="{:leuu('user/register/index')}"><i class="fa fa-user"></i> &nbsp;注册</a></li>
 	            </ul>
-          	</li>
-		</ul>
+          	</li> -->
+		<!-- </ul> -->
 		<div class="pull-right">
         	<form method="post" class="form-inline" action="{:U('portal/search/index')}" style="margin:18px 0;">
 				 <input type="text" class="" placeholder="Search" name="keyword" value="{:I('get.keyword')}"/>

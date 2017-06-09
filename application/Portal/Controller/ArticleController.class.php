@@ -84,7 +84,7 @@ class ArticleController extends HomebaseController {
     
     // 文章点赞
     public function do_like(){
-    	$this->check_login();
+    	// $this->check_login();
     	
     	$id = I('get.id',0,'intval');//posts表中id
     	
